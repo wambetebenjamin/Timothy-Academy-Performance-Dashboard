@@ -1,0 +1,120 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# Dependencies
+/node_modules
+yarn.lock
+pnpm-lock.yaml
+
+# Testing
+/coverage
+.nyc_output
+
+# Production
+/build
+/dist
+
+# Environment files (NEVER commit these)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.example
+
+# Secrets
+*.pem
+*.key
+*.p12
+*.pfx
+
+# IDE
+.eslintcache
+.DS_Store
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS
+ Thumbs.db
+Desktop.ini
+
+# Generated files
+public/images/*.jpg
+public/images/*.jpeg
+public/images/*.png
+public/images/*.webp
+!public/images/image-credits.md
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Optional REPL history
+*.tsbuildinfo
+
+# dotenv
+.env
+.env.test
+.env.production
+
+# parcel
+.cache
+.parcel-cache
+
+# next.js
+.next
+out
+
+# nuxt.js
+.nuxt
+dist
+
+# gatsby
+.cache
+public
+
+# TypeScript vite
+*-dts
+
+# Local docs
+*.md.pdf
+
+# Database
+*.sqlite
+*.db
+*.duckdb
+
+# Python (if any)
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Misc
+.gstack/

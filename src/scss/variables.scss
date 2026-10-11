@@ -1,0 +1,167 @@
+/* Timothy Academy Performance Dashboard - Design Tokens */
+/* Based on CoreUI SCSS variables and extended for the dashboard */
+
+:root {
+  /* CoreUI Base Variables (from @coreui/coreui/scss/utils/_variables.scss) */
+  --cui-primary: #1971c2;
+  --cui-primary-rgb: 25, 113, 194;
+  --cui-secondary: #5d6a7c;
+  --cui-secondary-rgb: 93, 106, 124;
+  --cui-success: #219653;
+  --cui-success-rgb: 33, 150, 83;
+  --cui-info: #1971c2;
+  --cui-info-rgb: 25, 113, 194;
+  --cui-warning: #f1b000;
+  --cui-warning-rgb: 241, 176, 0;
+  --cui-danger: #e03131;
+  --cui-danger-rgb: 224, 49, 49;
+  --cui-light: #adb5bd;
+  --cui-light-rgb: 173, 181, 189;
+  --cui-dark: #16181d;
+  --cui-dark-rgb: 22, 24, 29;
+
+  /* Timothy Academy Extended Palette - Kenya-inspired colors */
+  --ta-primary: #1a5f7a;
+  --ta-primary-rgb: 26, 95, 122;
+  --ta-primary-dark: #0f3d4f;
+  --ta-primary-light: #2a7d9c;
+  --ta-accent: #c1440e;
+  --ta-accent-rgb: 193, 68, 14;
+  --ta-success: #2d8a4e;
+  --ta-success-rgb: 45, 138, 78;
+  --ta-warning: #d4a017;
+  --ta-warning-rgb: 212, 160, 23;
+  --ta-danger: #b83232;
+  --ta-danger-rgb: 184, 50, 50;
+  --ta-info: #2c6e8f;
+  --ta-info-rgb: 44, 110, 143;
+
+  /* School Theme Colors */
+  --ta-school-navy: #1a365d;
+  --ta-school-navy-rgb: 26, 54, 93;
+  --ta-school-gold: #b8860b;
+  --ta-school-gold-rgb: 184, 134, 11;
+  --ta-school-green: #2e7d32;
+  --ta-school-green-rgb: 46, 125, 50;
+  --ta-school-cream: #faf8f5;
+  --ta-school-cream-rgb: 250, 248, 245;
+
+  /* Kenya Flag Colors */
+  --kenya-black: #000000;
+  --kenya-red: #ce1126;
+  --kenya-green: #008000;
+  --kenya-white: #ffffff;
+
+  /* Typography */
+  --ta-font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ta-font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ta-font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* Font Sizes - minimum requirements enforced */
+  --ta-font-size-xs: 0.6875rem;    /* 11px - metadata minimum */
+  --ta-font-size-sm: 0.8125rem;    /* 13px - navigation */
+  --ta-font-size-base: 0.9375rem;  /* 15px - body minimum */
+  --ta-font-size-md: 1rem;         /* 16px */
+  --ta-font-size-lg: 1.125rem;     /* 18px */
+  --ta-font-size-xl: 1.25rem;      /* 20px */
+  --ta-font-size-2xl: 1.5rem;      /* 24px */
+  --ta-font-size-3xl: 1.875rem;    /* 30px */
+  --ta-font-size-4xl: 2.25rem;     /* 36px */
+  --ta-font-size-5xl: 3rem;        /* 48px */
+
+  /* Buttons - 12px minimum */
+  --ta-btn-font-size: 0.75rem;     /* 12px */
+
+  /* Spacing */
+  --ta-space-1: 0.25rem;
+  --ta-space-2: 0.5rem;
+  --ta-space-3: 0.75rem;
+  --ta-space-4: 1rem;
+  --ta-space-5: 1.5rem;
+  --ta-space-6: 2rem;
+  --ta-space-8: 3rem;
+  --ta-space-10: 4rem;
+  --ta-space-12: 5rem;
+
+  /* Border Radius */
+  --ta-radius-sm: 0.25rem;
+  --ta-radius-md: 0.375rem;
+  --ta-radius-lg: 0.5rem;
+  --ta-radius-xl: 0.75rem;
+  --ta-radius-2xl: 1rem;
+  --ta-radius-full: 9999px;
+
+  /* Shadows */
+  --ta-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --ta-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --ta-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --ta-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --ta-transition-fast: 120ms ease;
+  --ta-transition-base: 200ms ease;
+  --ta-transition-slow: 320ms ease;
+
+  /* Glassmorphic Nav */
+  --ta-glass-blur: 20px;
+  --ta-glass-bg: rgba(255, 255, 255, 0.85);
+  --ta-glass-bg-dark: rgba(26, 54, 93, 0.85);
+
+  /* Animation Durations */
+  --ta-animation-hero: 1600ms;
+  --ta-animation-page-transition: 500ms;
+  --ta-animation-micro: 120ms;
+  --ta-animation-micro-max: 320ms;
+
+  /* Kenya County Colors for Globe */
+  --county-nairobi: #1a5f7a;
+  --county-mombasa: #c1440e;
+  --county-kisumu: #2d8a4e;
+  --county-eldoret: #d4a017;
+  --county-meru: #7b3f00;
+  --county-nakuru: #3d5a80;
+  --county-kericho: #a0c4ff;
+  --county-kitale: #2c6e8f;
+  --county-kisii: #2e7d32;
+  --county-embu: #8b4513;
+
+  /* Role Colors for Presence Strip */
+  --role-principal: #1a5f7a;
+  --role-hod: #2d8a4e;
+  --role-teacher: #d4a017;
+  --role-parent: #7b3f00;
+
+  /* Chart Colors */
+  --chart-primary: #1a5f7a;
+  --chart-secondary: #c1440e;
+  --chart-success: #2d8a4e;
+  --chart-warning: #d4a017;
+  --chart-danger: #b83232;
+  --chart-info: #2c6e8f;
+  --chart-grey: #6b7280;
+
+  /* WhatsApp Color */
+  --whatsapp-green: #25D366;
+  --whatsapp-green-rgb: 37, 211, 102;
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ta-glass-bg: rgba(26, 54, 93, 0.85);
+    --ta-school-cream: #1a2634;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ta-transition-fast: 0ms;
+    --ta-transition-base: 0ms;
+    --ta-transition-slow: 0ms;
+    --ta-animation-hero: 0ms;
+    --ta-animation-page-transition: 0ms;
+    --ta-animation-micro: 0ms;
+    --ta-animation-micro-max: 0ms;
+  }
+}
